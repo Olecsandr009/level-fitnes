@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto&display=swap&_v=20220520193023"
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto&display=swap&_v=20220524150609"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220520193023">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220524150609">
     <title>Level fitnes </title>
 </head>
 
@@ -28,7 +28,7 @@
                 <img src="img/all-icons/instagram.svg" alt="" class="header__location-icon">
                 <span>Мы в Instagram</span>
             </a>
-            <a href="#" class="header__location-burger-link">
+            <a data-burger-link="1" href="#" class="header__location-burger-link">
                 <img src="img/all-icons/burger.svg" alt="" class="header__location-icon">
             </a>
         </div>
@@ -42,16 +42,30 @@
             </div>
             <nav class="header__content-bottom">
                 <ul class="header__list">
-                    <li class="header__item"><a href="#" class="header__item-link">Групповые программы</a></li>
-                    <li class="header__item"><a href="#" class="header__item-link">Тренара</a></li>
-                    <li class="header__item"><a href="#" class="header__item-link">Интерьер</a></li>
-                    <li class="header__item"><a href="#" class="header__item-link">Контакты</a></li>
+                    <li class="header__item"><a href="#Programs" class="header__item-link">Групповые программы</a></li>
+                    <li class="header__item"><a href="#Trainers" class="header__item-link">Тренара</a></li>
+                    <li class="header__item"><a href="#Interior" class="header__item-link">Интерьер</a></li>
+                    <li class="header__item"><a href="#Contacts" class="header__item-link">Контакты</a></li>
                 </ul>
             </nav>
         </div>
     </div>
     <div class="header__phone-width-button"></div>
 </header>
+
+<div class="burger" data-burger="1">
+    <div class="burger__body">
+        <a data-burger-exit="1" href="#" class="burger__body-exit">
+            <img src="img/close.png" alt="" class="body-exit__image">
+        </a>
+        <ul class="burger__list">
+            <li class="header__item"><a href="#Programs" class="header__item-link">Групповые программы</a></li>
+            <li class="header__item"><a href="#Trainers" class="header__item-link">Тренара</a></li>
+            <li class="header__item"><a href="#Interior" class="header__item-link">Интерьер</a></li>
+            <li class="header__item"><a href="#Contacts" class="header__item-link">Контакты</a></li>
+        </ul>
+    </div>
+</div>
 		<main class="main">
 			<section class="hero">
     <div class="hero__slider">
@@ -183,7 +197,7 @@
         </div>
     </div>
 </section>
-			<section class="programs">
+			<section id="Programs" class="programs">
     <div class="programs__container">
         <div class="programs__content">
             <div class="programs__text">
@@ -295,7 +309,7 @@
         <a href="#" class="register__button btn-orange">зарегистрироваться</a>
     </div>
 </section>
-			<section class="trainers">
+			<section id="Trainers" class="trainers">
     <div class="trainers__container">
         <div class="trainers__content">
             <div class="trainers__text">
@@ -394,7 +408,7 @@
     <div class="form__bg"></div>
     <div class="form__bg two"></div>
 </section>
-			<section class="interior">
+			<section id="Interior" class="interior">
     <div class="interior__container">
         <h5 class="interior__sub-title sub-title">приглашаем в гости</h5>
         <h2 class="interior__title title black">Интерьер в фитнес-центре</h2>
@@ -421,7 +435,7 @@
     </div>
 </section>
 		</main>
-		<footer class="footer">
+		<footer id="Contacts" class="footer">
     <div class="footer__container">
         <div class="footer__content">
             <p class="footer__item date">Понедельник — Пятница: 07:00–23:00
@@ -445,7 +459,7 @@
 </footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20220520193023"></script>
+	<script src="js/app.min.js?_v=20220524150609"></script>
 </body>
 
 </html>
